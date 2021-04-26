@@ -1,0 +1,9 @@
+<div>
+    <p>CITIES WEATHER INFO</p>
+    <div class ="city-details" *ngFor = "let city of cities" (click)="getCityDetails(city)">
+        <p>City Name : {{city.city}}</p>
+        <p>Temparature : {{city.temp}}</p>
+        <p>Sunrise Time : {{city.sunrise}}</p>
+        <p>SunSet Time : {{city.sunset}}</p>
+    </div>
+</div>  
